@@ -23,27 +23,32 @@
                 android:id="@+id/team_a_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:padding="4dp"
-                android:textSize="14sp"
-                android:textColor="#616161"
                 android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="16dp"
                 android:text="Team A!"
+                android:textColor="#616161"
+                android:textSize="14sp"
                 tools:targetApi="jelly_bean" />
 
             <TextView
                 android:id="@+id/team_a_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
                 android:gravity="center_horizontal"
-                android:padding="4dp"
-                android:text="3" />
+                android:paddingBottom="24dp"
+                android:text="3"
+                android:textColor="#000000"
+                android:textSize="56sp" />
 
             <Button
                 android:id="@+id/team_a_two_points"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
                 android:onClick="addThreeForTeamA"
                 android:text="+3 points"
                 android:textAllCaps="true" />
@@ -52,7 +57,9 @@
                 android:id="@+id/team_a_three_points"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
                 android:onClick="addTwoForTeamA"
                 android:text="+2 points"
                 android:textAllCaps="true" />
@@ -61,9 +68,9 @@
                 android:id="@+id/team_a_free_throw"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
                 android:onClick="addOneForTeamA"
                 android:text="Free throw"
                 android:textAllCaps="true" />
@@ -72,6 +79,7 @@
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
             android:background="@android:color/darker_gray"/>
 
 
@@ -86,26 +94,31 @@
                 android:id="@+id/team_b_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:textSize="14sp"
-                android:textColor="#616161"
                 android:fontFamily="sans-serif-medium"
-                android:padding="4dp"
-                android:text="Team B!" />
+                android:gravity="center_horizontal"
+                android:padding="16dp"
+                android:text="Team B!"
+                android:textColor="#616161"
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/team_b_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
                 android:gravity="center_horizontal"
-                android:padding="4dp"
-                android:text="3" />
+                android:paddingBottom="24dp"
+                android:text="3"
+                android:textColor="#000000"
+                android:textSize="56sp" />
 
             <Button
                 android:id="@+id/team_b_three_points"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
                 android:onClick="addThreeForTeamB"
                 android:text="+3 points"
                 android:textAllCaps="true" />
@@ -114,7 +127,9 @@
                 android:id="@+id/team_b_two_points"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
                 android:onClick="addTwoForTeamB"
                 android:text="+2 points"
                 android:textAllCaps="true" />
@@ -123,9 +138,9 @@
                 android:id="@+id/team_b_free_throw"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
                 android:onClick="addOneForTeamB"
                 android:text="Free throw"
                 android:textAllCaps="true" />
@@ -139,7 +154,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="8dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
         android:onClick="reset"
         android:text="reset"
         android:textAllCaps="true" />
